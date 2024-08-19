@@ -1,9 +1,11 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
 public class Main {
     public static void main(String[] args) {
-        // Создаём список слов
         ArrayList<String> words = new ArrayList<>();
 
-        // Добавляем слова в список
         words.add("дом");
         words.add("дерево");
         words.add("дерево");
@@ -18,14 +20,7 @@ public class Main {
         words.add("компьютер");
         words.add("телефон");
 
-        // Находим уникальные слова
         Set<String> uniqueWords = new HashSet<>(words);
-
-        System.out.println("Уникальные слова: ");
-        for (String word : uniqueWords) {
-            System.out.print(word + " ");
-        }
-
-        System.out.println();
+        System.out.println("Уникальные слова: " + uniqueWords);
     }
 }
