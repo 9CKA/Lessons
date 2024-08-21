@@ -1,14 +1,9 @@
-import org.junit.jupiter.api.Test;
-
-class FactorialTest {
-
-    @Test
-    void testFactorial() {
-        assertEquals(1, Factorial.factorial(0));
-        assertEquals(2, Factorial.factorial(1));
-        assertEquals(6, Factorial.factorial(2));
-        // и так далее...
+public class Factorial {
+    public static long factorial(int n) {
+        long result = 1;
+        for (int i = 2; i <= n; i++) {
+            result *= i;
+        }
+        return result;
     }
-
 }
-
